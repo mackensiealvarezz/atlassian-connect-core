@@ -52,7 +52,7 @@ class JWTHelper
             'qsh' => static::qsh($url, $method)
         ];
 
-        return \Firebase\JWT\JWT::encode($payload, $secret);
+        return \Firebase\JWT\JWT::encode($payload, $secret, 'HS256');
     }
 
     /**
