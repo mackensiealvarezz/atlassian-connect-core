@@ -16,10 +16,10 @@ class CreateTenantTable extends Migration
             $blueprint->increments('id');
             $blueprint->string('addon_key');
             $blueprint->string('client_key', 36);
-            $blueprint->string('public_key')->nullable();
+            $blueprint->text('public_key')->nullable();
             $blueprint->string('shared_secret');
             $blueprint->string('server_version', 20);
-            $blueprint->string('plugin_version', 20);
+            $blueprint->string('plugin_version', 50);
             $blueprint->string('base_url');
             $blueprint->string('product_type', 10);
             $blueprint->text('description');
